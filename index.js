@@ -6,6 +6,8 @@ const Readable = require('stream').Readable
 class Source extends Readable {
   constructor () {
     super()
+
+    this._readableState.objectMode = true
   }
 
   match (subject, predicate, object, graph) {
