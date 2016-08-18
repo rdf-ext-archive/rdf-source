@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/rdf-ext/rdf-source",
   "dependencies": {
-    "rdf-filter-stream": "git://github.com/rdf-ext/rdf-filter-stream.git#v1"
+    "rdf-filter-stream": "git://github.com/rdf-ext/rdf-filter-stream.git#develop"
   },
   "devDependencies": {
     "mocha": "^2.4.5",
