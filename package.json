@@ -25,12 +25,25 @@
   },
   "homepage": "https://github.com/rdf-ext/rdf-source",
   "dependencies": {
+    "babelify": "^7.3.0",
     "rdf-filter-stream": "git://github.com/rdf-ext/rdf-filter-stream.git#develop"
   },
   "devDependencies": {
     "mocha": "^2.4.5",
     "rdf-data-model": "git://github.com/rdf-ext/rdf-data-model.git#develop",
     "standard": "^7.0.1"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
   },
   "readmeFilename": "README.md"
 }
