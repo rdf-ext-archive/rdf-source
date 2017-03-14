@@ -1,7 +1,7 @@
 'use strict'
 
 const FilterStream = require('rdf-filter-stream')
-const Readable = require('stream').Readable
+const Readable = require('readable-stream')
 
 class Source extends Readable {
   constructor () {

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "standard",
-    "test": "mocha"
+    "test": "npm run lint && mocha"
   },
   "repository": {
     "type": "git",
@@ -25,25 +25,13 @@
   },
   "homepage": "https://github.com/rdf-ext/rdf-source",
   "dependencies": {
-    "babelify": "^7.3.0",
-    "rdf-filter-stream": "git://github.com/rdf-ext/rdf-filter-stream.git#develop"
+    "rdf-filter-stream": "git://github.com/rdf-ext/rdf-filter-stream.git#develop",
+    "readable-stream": "^2.2.3"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
+    "mocha": "^3.2.0",
     "rdf-data-model": "git://github.com/rdf-ext/rdf-data-model.git#develop",
-    "standard": "^7.0.1"
-  },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015"
-          ]
-        }
-      ]
-    ]
+    "standard": "^9.0.1"
   },
   "readmeFilename": "README.md"
 }
