@@ -1,6 +1,6 @@
 {
   "name": "rdf-source",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Abstract RDFJS Source Interface implementation",
   "main": "index.js",
   "scripts": {
